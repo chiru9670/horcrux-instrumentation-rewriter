@@ -561,7 +561,7 @@ if (program.launch) {
     if (program.mode == "record"){
         console.log("Mode:Record")
         var chromeUserDirExt = (new Date).getTime();
-        fs.writeFileSync(chromeUserDir, chromeUserDirExt);
+        fs.writeFileSync(chromeUserDir, chromeUserDirExt.toString());
     } else if (program.mode == "replay"){
         console.log("Mode:Replay")
         try {
@@ -573,7 +573,7 @@ if (program.launch) {
     } else {
         console.log("Running code without caching framework in place");
         var chromeUserDirExt = (new Date).getTime();
-        fs.writeFileSync(chromeUserDir, chromeUserDirExt);
+        fs.writeFileSync(chromeUserDir, chromeUserDirExt.toString());
         // process.exit();
     }
     chromeLauncher.launch({

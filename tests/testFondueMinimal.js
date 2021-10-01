@@ -36,7 +36,7 @@ then compare the system's output against the actual signature.
 
 var PATH_TO_INSTRUMENT_SCRIPT="../instrumentation/instrument.js"
 var PATH_TO_TEST_WEBSITE="file:///" + __dirname +"/";
-var PATH_TO_TEST_WEBSITE="http://goelayu4929.eecs.umich.edu:99/"
+// var PATH_TO_TEST_WEBSITE="http://goelayu4929.eecs.umich.edu:99/"
 // var PATH_TO_TEST_WEBSITE ="file:///Users/ayushgoel/Google_Drive/GradSchool/Research/webPerformance/WebPeformance/tests/"
 var TMP_FILE = "tmp"
 const { spawn } = require('child_process');

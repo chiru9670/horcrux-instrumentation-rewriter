@@ -268,7 +268,7 @@ function instrumentHTML(src, fondueOptions) {
     mergeStaticInformation_uncacheable(options);
     if (!hostCounter){
         hostCounter++;
-        var deterministicCode = '\n' + deterministic.header + '\n';
+        var deterministicCode = '\n' + deterministic.header.replace("\"use strict\";", "") + '\n';
         // fs.writeFileSync(hostDir+"/deterministic.js", deterministicCode);
         // fs.writeFileSync(hostDir+"/tracer.js", fondue.instrumentationPrefix(options));
         // fs.writeFileSync(hostDir+"/omni.min.js", omniStringify);
